@@ -16,6 +16,8 @@
 		3CD3883E27D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3883D27D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKETests.swift */; };
 		3CD3884827D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3884727D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITests.swift */; };
 		3CD3884A27D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3884927D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift */; };
+		3CD3885727D870FD00CDFA3B /* roulette.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3885627D870FD00CDFA3B /* roulette.png */; };
+		3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3CD3884327D86FC900CDFA3B /* SUPER NANIO MAKER REMAKEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUPER NANIO MAKER REMAKEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD3884727D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUPER_NANIO_MAKER_REMAKEUITests.swift; sourceTree = "<group>"; };
 		3CD3884927D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CD3885627D870FD00CDFA3B /* roulette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roulette.png; sourceTree = "<group>"; };
+		3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rouletteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,9 @@
 				3CD3882827D86FC500CDFA3B /* SceneDelegate.swift */,
 				3CD3882A27D86FC500CDFA3B /* ViewController.swift */,
 				3CD3882C27D86FC500CDFA3B /* Main.storyboard */,
+				3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */,
 				3CD3882F27D86FC900CDFA3B /* Assets.xcassets */,
+				3CD3885627D870FD00CDFA3B /* roulette.png */,
 				3CD3883127D86FC900CDFA3B /* LaunchScreen.storyboard */,
 				3CD3883427D86FC900CDFA3B /* Info.plist */,
 			);
@@ -234,6 +240,7 @@
 				3CD3883327D86FC900CDFA3B /* LaunchScreen.storyboard in Resources */,
 				3CD3883027D86FC900CDFA3B /* Assets.xcassets in Resources */,
 				3CD3882E27D86FC500CDFA3B /* Main.storyboard in Resources */,
+				3CD3885727D870FD00CDFA3B /* roulette.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			files = (
 				3CD3882B27D86FC500CDFA3B /* ViewController.swift in Sources */,
 				3CD3882727D86FC500CDFA3B /* AppDelegate.swift in Sources */,
+				3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */,
 				3CD3882927D86FC500CDFA3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
