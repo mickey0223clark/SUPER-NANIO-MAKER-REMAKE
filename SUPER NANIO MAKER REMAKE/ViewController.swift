@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet var settingbutton:UIButton!
     @IBOutlet var plusbutton:UIButton!
     
+    @IBOutlet var rule1: UITextField!
+    @IBOutlet var rule2: UITextField!
+    @IBOutlet var rule3: UITextField!
+    @IBOutlet var rule4: UITextField!
+    @IBOutlet var rule5: UITextField!
+    @IBOutlet var rule6: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +36,18 @@ class ViewController: UIViewController {
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNext" {
+            let nextView = segue.destination as! rouletteViewController
+            nextView.str1 = rule1.text!
+            nextView.str2 = rule2.text!
+            nextView.str3 = rule3.text!
+            nextView.str4 = rule4.text!
+            nextView.str5 = rule5.text!
+            nextView.str6 = rule6.text!
+
+        }
+    }
+    
 }
 
