@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD4F4169D07B0697DCF856B /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F63375C166DD2DCFAF66809 /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework */; };
 		3CD3882727D86FC500CDFA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3882627D86FC500CDFA3B /* AppDelegate.swift */; };
 		3CD3882927D86FC500CDFA3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3882827D86FC500CDFA3B /* SceneDelegate.swift */; };
 		3CD3882B27D86FC500CDFA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3882A27D86FC500CDFA3B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 		3CD3884A27D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3884927D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift */; };
 		3CD3885727D870FD00CDFA3B /* roulette.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3885627D870FD00CDFA3B /* roulette.png */; };
 		3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */; };
+		4B27568128D049CD00028568 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27568028D049CD00028568 /* settingViewController.swift */; };
 		4B9A3FA528756665000EFDC9 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3F9F28756664000EFDC9 /* yellow.png */; };
 		4B9A3FA628756665000EFDC9 /* light blue.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3FA028756665000EFDC9 /* light blue.PNG */; };
 		4B9A3FA728756665000EFDC9 /* pink.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3FA128756665000EFDC9 /* pink.PNG */; };
@@ -31,6 +33,8 @@
 		4B9A44FF28619A480006F2F1 /* 666.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A44FE28619A480006F2F1 /* 666.PNG */; };
 		4BB1468E28506DCA00904601 /* wakusenn.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1468D28506DCA00904601 /* wakusenn.PNG */; };
 		4BB1469028507B7600904601 /* 46wakusenn.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1468F28507B7600904601 /* 46wakusenn.PNG */; };
+		62AE307C113F6FA374EAFAD8 /* Pods_SUPER_NANIO_MAKER_REMAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C29AB876B5A118436B6DB4A /* Pods_SUPER_NANIO_MAKER_REMAKE.framework */; };
+		86300E2C65B994CF0DECE750 /* Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834814EA0D9BCBE08373FCF /* Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1834814EA0D9BCBE08373FCF /* Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF058703B3DA5F03780FD5C /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.release.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B6FBC6CF1CB62A22F96CA85 /* Pods-SUPER NANIO MAKER REMAKETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKETests.release.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKETests/Pods-SUPER NANIO MAKER REMAKETests.release.xcconfig"; sourceTree = "<group>"; };
 		3CD3882327D86FC500CDFA3B /* SUPER NANIO MAKER REMAKE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUPER NANIO MAKER REMAKE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD3882627D86FC500CDFA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD3882827D86FC500CDFA3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,8 @@
 		3CD3884927D86FC900CDFA3B /* SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUPER_NANIO_MAKER_REMAKEUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3CD3885627D870FD00CDFA3B /* roulette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roulette.png; sourceTree = "<group>"; };
 		3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rouletteViewController.swift; sourceTree = "<group>"; };
+		3F63375C166DD2DCFAF66809 /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPER_NANIO_MAKER_REMAKETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27568028D049CD00028568 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		4B9A3F9F28756664000EFDC9 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = ../../../Downloads/yellow.png; sourceTree = "<group>"; };
 		4B9A3FA028756665000EFDC9 /* light blue.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light blue.PNG"; path = "../../../Downloads/light blue.PNG"; sourceTree = "<group>"; };
 		4B9A3FA128756665000EFDC9 /* pink.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink.PNG; path = ../../../Downloads/pink.PNG; sourceTree = "<group>"; };
@@ -79,6 +88,11 @@
 		4B9A44FE28619A480006F2F1 /* 666.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 666.PNG; path = ../../../Downloads/666.PNG; sourceTree = "<group>"; };
 		4BB1468D28506DCA00904601 /* wakusenn.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wakusenn.PNG; path = ../../../Downloads/wakusenn.PNG; sourceTree = "<group>"; };
 		4BB1468F28507B7600904601 /* 46wakusenn.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 46wakusenn.PNG; path = ../../../Downloads/46wakusenn.PNG; sourceTree = "<group>"; };
+		4C29AB876B5A118436B6DB4A /* Pods_SUPER_NANIO_MAKER_REMAKE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPER_NANIO_MAKER_REMAKE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D2BD80BE0F081B084783F5 /* Pods-SUPER NANIO MAKER REMAKETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKETests.debug.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKETests/Pods-SUPER NANIO MAKER REMAKETests.debug.xcconfig"; sourceTree = "<group>"; };
+		9711A4B8432E39E65E8E76D5 /* Pods-SUPER NANIO MAKER REMAKE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKE.release.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKE/Pods-SUPER NANIO MAKER REMAKE.release.xcconfig"; sourceTree = "<group>"; };
+		CAF2C9F958410AA3B6FA08F1 /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.debug.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E99F4E14F51A68EFF8BA006C /* Pods-SUPER NANIO MAKER REMAKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUPER NANIO MAKER REMAKE.debug.xcconfig"; path = "Target Support Files/Pods-SUPER NANIO MAKER REMAKE/Pods-SUPER NANIO MAKER REMAKE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AE307C113F6FA374EAFAD8 /* Pods_SUPER_NANIO_MAKER_REMAKE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD4F4169D07B0697DCF856B /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86300E2C65B994CF0DECE750 /* Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0187C63CA3A1824674B347 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E99F4E14F51A68EFF8BA006C /* Pods-SUPER NANIO MAKER REMAKE.debug.xcconfig */,
+				9711A4B8432E39E65E8E76D5 /* Pods-SUPER NANIO MAKER REMAKE.release.xcconfig */,
+				CAF2C9F958410AA3B6FA08F1 /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.debug.xcconfig */,
+				1CF058703B3DA5F03780FD5C /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.release.xcconfig */,
+				50D2BD80BE0F081B084783F5 /* Pods-SUPER NANIO MAKER REMAKETests.debug.xcconfig */,
+				2B6FBC6CF1CB62A22F96CA85 /* Pods-SUPER NANIO MAKER REMAKETests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3CD3881A27D86FC500CDFA3B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +143,8 @@
 				3CD3883C27D86FC900CDFA3B /* SUPER NANIO MAKER REMAKETests */,
 				3CD3884627D86FC900CDFA3B /* SUPER NANIO MAKER REMAKEUITests */,
 				3CD3882427D86FC500CDFA3B /* Products */,
+				2F0187C63CA3A1824674B347 /* Pods */,
+				906DF4421778E835A4737A10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +176,10 @@
 				4BB1468D28506DCA00904601 /* wakusenn.PNG */,
 				3CD3882627D86FC500CDFA3B /* AppDelegate.swift */,
 				3CD3882827D86FC500CDFA3B /* SceneDelegate.swift */,
-				3CD3882A27D86FC500CDFA3B /* ViewController.swift */,
 				3CD3882C27D86FC500CDFA3B /* Main.storyboard */,
+				3CD3882A27D86FC500CDFA3B /* ViewController.swift */,
 				3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */,
+				4B27568028D049CD00028568 /* settingViewController.swift */,
 				3CD3882F27D86FC900CDFA3B /* Assets.xcassets */,
 				3CD3885627D870FD00CDFA3B /* roulette.png */,
 				3CD3883127D86FC900CDFA3B /* LaunchScreen.storyboard */,
@@ -172,6 +205,16 @@
 			path = "SUPER NANIO MAKER REMAKEUITests";
 			sourceTree = "<group>";
 		};
+		906DF4421778E835A4737A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C29AB876B5A118436B6DB4A /* Pods_SUPER_NANIO_MAKER_REMAKE.framework */,
+				1834814EA0D9BCBE08373FCF /* Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests.framework */,
+				3F63375C166DD2DCFAF66809 /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD3884D27D86FC900CDFA3B /* Build configuration list for PBXNativeTarget "SUPER NANIO MAKER REMAKE" */;
 			buildPhases = (
+				74A8752A7C7D2E4D2B2C9623 /* [CP] Check Pods Manifest.lock */,
 				3CD3881F27D86FC500CDFA3B /* Sources */,
 				3CD3882027D86FC500CDFA3B /* Frameworks */,
 				3CD3882127D86FC500CDFA3B /* Resources */,
+				2327A3BB30D895FF6916EC0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD3885027D86FC900CDFA3B /* Build configuration list for PBXNativeTarget "SUPER NANIO MAKER REMAKETests" */;
 			buildPhases = (
+				09614FDA7430793586DF2695 /* [CP] Check Pods Manifest.lock */,
 				3CD3883527D86FC900CDFA3B /* Sources */,
 				3CD3883627D86FC900CDFA3B /* Frameworks */,
 				3CD3883727D86FC900CDFA3B /* Resources */,
@@ -214,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD3885327D86FC900CDFA3B /* Build configuration list for PBXNativeTarget "SUPER NANIO MAKER REMAKEUITests" */;
 			buildPhases = (
+				46E23616695BD15ECA962E4B /* [CP] Check Pods Manifest.lock */,
 				3CD3883F27D86FC900CDFA3B /* Sources */,
 				3CD3884027D86FC900CDFA3B /* Frameworks */,
 				3CD3884127D86FC900CDFA3B /* Resources */,
+				799DE8ACDC3BEDD679220876 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +360,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09614FDA7430793586DF2695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SUPER NANIO MAKER REMAKETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2327A3BB30D895FF6916EC0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE/Pods-SUPER NANIO MAKER REMAKE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE/Pods-SUPER NANIO MAKER REMAKE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE/Pods-SUPER NANIO MAKER REMAKE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46E23616695BD15ECA962E4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A8752A7C7D2E4D2B2C9623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SUPER NANIO MAKER REMAKE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		799DE8ACDC3BEDD679220876 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests/Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CD3881F27D86FC500CDFA3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,6 +470,7 @@
 			files = (
 				3CD3882B27D86FC500CDFA3B /* ViewController.swift in Sources */,
 				3CD3882727D86FC500CDFA3B /* AppDelegate.swift in Sources */,
+				4B27568128D049CD00028568 /* settingViewController.swift in Sources */,
 				3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */,
 				3CD3882927D86FC500CDFA3B /* SceneDelegate.swift in Sources */,
 			);
@@ -494,6 +646,7 @@
 		};
 		3CD3884E27D86FC900CDFA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99F4E14F51A68EFF8BA006C /* Pods-SUPER NANIO MAKER REMAKE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +659,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +675,7 @@
 		};
 		3CD3884F27D86FC900CDFA3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9711A4B8432E39E65E8E76D5 /* Pods-SUPER NANIO MAKER REMAKE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,6 +688,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +704,7 @@
 		};
 		3CD3885127D86FC900CDFA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D2BD80BE0F081B084783F5 /* Pods-SUPER NANIO MAKER REMAKETests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,6 +724,7 @@
 		};
 		3CD3885227D86FC900CDFA3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6FBC6CF1CB62A22F96CA85 /* Pods-SUPER NANIO MAKER REMAKETests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -586,6 +744,7 @@
 		};
 		3CD3885427D86FC900CDFA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF2C9F958410AA3B6FA08F1 /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -603,6 +762,7 @@
 		};
 		3CD3885527D86FC900CDFA3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF058703B3DA5F03780FD5C /* Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

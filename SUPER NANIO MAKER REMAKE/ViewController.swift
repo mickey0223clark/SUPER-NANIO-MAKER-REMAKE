@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var settingbutton:UIButton!
-    @IBOutlet var plusbutton:UIButton!
+    @IBOutlet weak var settingbutton:UIButton!
+    @IBOutlet weak var plusbutton:UIButton!
     
     @IBOutlet var rule1: UITextField!
     @IBOutlet var rule2: UITextField!
@@ -18,6 +18,13 @@ class ViewController: UIViewController {
     @IBOutlet var rule4: UITextField!
     @IBOutlet var rule5: UITextField!
     @IBOutlet var rule6: UITextField!
+    
+    @IBOutlet var detail1: UITextField!
+    @IBOutlet var detail2: UITextField!
+    @IBOutlet var detail3: UITextField!
+    @IBOutlet var detail4: UITextField!
+    @IBOutlet var detail5: UITextField!
+    @IBOutlet var detail6: UITextField!
     
 
     override func viewDidLoad() {
@@ -31,7 +38,7 @@ class ViewController: UIViewController {
         let largeBoldPul = UIImage(systemName: "plus.circle", withConfiguration: largeConfig2)
         plusbutton.setImage(largeBoldPul, for: .normal)
 
-        
+        plusbutton.isEnabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -45,6 +52,13 @@ class ViewController: UIViewController {
             nextView.str4 = rule4.text!
             nextView.str5 = rule5.text!
             nextView.str6 = rule6.text!
+            
+            nextView.text1 = detail1.text!
+            nextView.text2 = detail2.text!
+            nextView.text3 = detail3.text!
+            nextView.text4 = detail4.text!
+            nextView.text5 = detail5.text!
+            nextView.text6 = detail6.text!
 
         }
     }

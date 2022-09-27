@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="ssV-R3-WE0">
             <objects>
-                <viewController id="Slc-qV-YLT" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Slc-qV-YLT" customClass="settingViewController" customModule="SUPER_NANIO_MAKER_REMAKE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQy-5O-INm">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="IkY-8M-VOp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XGw-MI-xS5">
+                        <barButtonItem key="leftBarButtonItem" title="B" image="chevron.left" catalog="system" id="Ylh-9n-sh5">
+                            <connections>
+                                <action selector="back" destination="Slc-qV-YLT" id="Ik8-Ta-vNN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyh-2M-RNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="98"/>
+            <point key="canvasLocation" x="772.66187050359713" y="793.96984924623121"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -67,7 +75,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Slc-qV-YLT" kind="presentation" id="m6j-2P-u7i"/>
+                                    <segue destination="jvF-dN-lia" kind="presentation" modalPresentationStyle="automatic" id="m6j-2P-u7i"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-po-f7t">
@@ -184,6 +192,7 @@
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ルーレット">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0"/>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -195,6 +204,12 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="detail1" destination="FSN-mb-WSt" id="jVB-aa-4Qj"/>
+                        <outlet property="detail2" destination="FNE-3O-WbE" id="v6H-DD-Uzb"/>
+                        <outlet property="detail3" destination="jtY-f2-ECD" id="zMG-JQ-KZo"/>
+                        <outlet property="detail4" destination="1pc-WA-c7d" id="riH-7I-fPN"/>
+                        <outlet property="detail5" destination="Uhj-cs-Lfw" id="a9b-cf-msF"/>
+                        <outlet property="detail6" destination="vGe-fR-9Fo" id="Sqp-it-fFc"/>
                         <outlet property="plusbutton" destination="2Nh-0k-H6r" id="bnY-tA-mgp"/>
                         <outlet property="rule1" destination="VOq-ee-rmc" id="7Pu-gU-gzy"/>
                         <outlet property="rule2" destination="Gk6-qV-rQk" id="9b0-Lo-Snp"/>
@@ -228,13 +243,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apr-WV-AIY">
-                                <rect key="frame" x="217" y="79" width="400" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-7d-GB6">
                                 <rect key="frame" x="100" y="1012" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -258,14 +266,37 @@
                                     <action selector="start" destination="vNy-IZ-Ewc" eventType="touchUpInside" id="b1f-bU-7CX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apr-WV-AIY">
+                                <rect key="frame" x="117" y="79" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfQ-xD-K1m">
+                                <rect key="frame" x="637" y="1022" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.on.rectangle" catalog="system">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0" strokeWidth="0.0" strokeOutset="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-iH-dkE">
+                                <rect key="frame" x="167" y="914" width="500" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sk0-BD-PKm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="backbutton" destination="OdY-7d-GB6" id="odE-0e-UHp"/>
-                        <outlet property="label" destination="Apr-WV-AIY" id="rwQ-nc-A0h"/>
+                        <outlet property="detaillabel" destination="trQ-iH-dkE" id="PEE-8N-SD5"/>
                         <outlet property="rouletteView" destination="Zek-QM-MAi" id="edg-1O-Bgb"/>
+                        <outlet property="rulelabel" destination="Apr-WV-AIY" id="bqR-XU-bhA"/>
                         <outlet property="startbutton" destination="cij-Aj-7yP" id="7j6-qq-Tbv"/>
                     </connections>
                 </viewController>
@@ -273,17 +304,37 @@
             </objects>
             <point key="canvasLocation" x="746.76258992805765" y="97.989949748743726"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="af3-Vz-zXv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jvF-dN-lia" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pds-k2-rUK">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Slc-qV-YLT" kind="relationship" relationship="rootViewController" id="e3z-Qd-Vo2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0G-4h-sEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.705035971223023" y="793.96984924623121"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1231pxwakusenn.PNG" width="794" height="570"/>
         <image name="666.PNG" width="1280" height="1280"/>
         <image name="blue.PNG" width="1280" height="1280"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="camera.on.rectangle" catalog="system" width="128" height="98"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="green.PNG" width="1280" height="1280"/>
         <image name="light blue.PNG" width="1280" height="1280"/>
         <image name="pink.PNG" width="1280" height="1280"/>
-        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="red.png" width="1280" height="1280"/>
         <image name="yellow.png" width="1280" height="1280"/>
         <systemColor name="linkColor">

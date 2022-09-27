@@ -20,12 +20,20 @@ class rouletteViewController: UIViewController {
     var str4 = ""
     var str5 = ""
     var str6 = ""
+    
+    var text1 = ""
+    var text2 = ""
+    var text3 = ""
+    var text4 = ""
+    var text5 = ""
+    var text6 = ""
 
     
-    @IBOutlet var label:UILabel!
-    @IBOutlet weak var rouletteView: UIImageView!
+    @IBOutlet var rulelabel:UILabel!
+    @IBOutlet var rouletteView: UIImageView!
     @IBOutlet var backbutton:UIButton!
-    @IBOutlet weak var startbutton: UIButton!
+    @IBOutlet var startbutton: UIButton!
+    @IBOutlet var detaillabel:UILabel!
     
     
 // Expected declarationは関数の中でかけ！ってこと
@@ -40,8 +48,16 @@ class rouletteViewController: UIViewController {
         print(str4)
         print(str5)
         print(str6)
+        print(text1)
+        print(text2)
+        print(text3)
+        print(text4)
+        print(text5)
+        print(text6)
+        
         rotation()
-        label.text = "    "
+        rulelabel.text = "    "
+        detaillabel.text = "    "
         //UIButtonを無効化
         startbutton.isEnabled = false
     }
@@ -72,19 +88,25 @@ class rouletteViewController: UIViewController {
                 
                 switch self.number {
                 case (1...60):
-                    self.label.text = self.str6
+                    self.rulelabel.text = self.str6
+                    self.detaillabel.text = self.text6
                   case (61...120):
-                    self.label.text = self.str5
+                    self.rulelabel.text = self.str5
+                    self.detaillabel.text = self.text5
                   case (121...180):
-                    self.label.text = self.str4
+                    self.rulelabel.text = self.str4
+                    self.detaillabel.text = self.text4
                   case (181...240):
-                    self.label.text = self.str3
+                    self.rulelabel.text = self.str3
+                    self.detaillabel.text = self.text3
                   case (241...300):
-                    self.label.text = self.str2
+                    self.rulelabel.text = self.str2
+                    self.detaillabel.text = self.text2
                   case (301...360):
-                    self.label.text = self.str1
+                    self.rulelabel.text = self.str1
+                    self.detaillabel.text = self.text1
                 default:
-                    self.label.text = "わからん"
+                    self.rulelabel.text = "わからん"
                 }
                 
             }
