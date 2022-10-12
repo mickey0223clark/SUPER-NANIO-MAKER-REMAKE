@@ -13,6 +13,7 @@ class rouletteViewController: UIViewController {
     var number:Int=0
     var second:Double=0
     var count:Int=0
+    var type : String = ""
     
     var str1 = ""
     var str2 = ""
@@ -38,22 +39,25 @@ class rouletteViewController: UIViewController {
     
 // Expected declarationは関数の中でかけ！ってこと
     @IBAction func start() {
-        second = Double.random(in: 3...10)
+//        second = Double.random(in: 3...10)
+//        count = Int.random(in: 1...6)
+        
         print(second)
-        count = Int.random(in: 1...6)
         print(count)
+        
         print(str1)
         print(str2)
         print(str3)
         print(str4)
         print(str5)
         print(str6)
-        print(text1)
-        print(text2)
-        print(text3)
-        print(text4)
-        print(text5)
-        print(text6)
+        
+//        print(text1)
+//        print(text2)
+//        print(text3)
+//        print(text4)
+//        print(text5)
+//        print(text6)
         
         rotation()
         rulelabel.text = "    "
@@ -64,6 +68,27 @@ class rouletteViewController: UIViewController {
     
     //回転のファンクション
     func rotation() {
+        type = UserDefaults.standard.string(forKey: "設定")!
+        print(type)
+        //if ("ゆっくりが選択されてるなら"){second = Double.random(in: x...y) 　count = Int.random(in: a...b)}
+        switch type{
+         case ("ランダム"):
+            second = Double.random(in: 3...10)
+            count = Int.random(in: 1...6)
+        case("ゆっくり"):
+            second = Double.random(in: 7...10)
+            count = Int.random(in: 1...6)
+        case("ふつう"):
+            second = Double.random(in: 5...8)
+            count = Int.random(in: 1...6)
+        case("はやい"):
+            second = Double.random(in: 1...4)
+            count = Int.random(in: 1...6)
+        default:
+            print("エラー")
+        }
+    
+        
         UIView.animate(
             withDuration: second,
             animations: {
@@ -108,10 +133,10 @@ class rouletteViewController: UIViewController {
                 default:
                     self.rulelabel.text = "わからん"
                 }
+                print("OK")
                 
             }
         )
-        print("OK")
         
     }
     

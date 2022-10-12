@@ -1,0 +1,6 @@
+framework module Pods_SUPER_NANIO_MAKER_REMAKE_SUPER_NANIO_MAKER_REMAKEUITests {
+  umbrella header "Pods-SUPER NANIO MAKER REMAKE-SUPER NANIO MAKER REMAKEUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
