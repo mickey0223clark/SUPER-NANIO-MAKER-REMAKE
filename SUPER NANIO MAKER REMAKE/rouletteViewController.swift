@@ -68,7 +68,7 @@ class rouletteViewController: UIViewController {
     
     //回転のファンクション
     func rotation() {
-        type = UserDefaults.standard.string(forKey: "設定")!
+        type = UserDefaults.standard.string(forKey: "設定") ?? "ふつう"
         print(type)
         //if ("ゆっくりが選択されてるなら"){second = Double.random(in: x...y) 　count = Int.random(in: a...b)}
         switch type{
@@ -133,8 +133,9 @@ class rouletteViewController: UIViewController {
                 default:
                     self.rulelabel.text = "わからん"
                 }
+                self.rulelabel.adjustsFontSizeToFitWidth = true
+                self.detaillabel.adjustsFontSizeToFitWidth = true
                 print("OK")
-                
             }
         )
         

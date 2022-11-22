@@ -23,7 +23,7 @@ class settingViewController: FormViewController {
         <<< PushRow<String>(){
             $0.title = "停止までの時間を設定"//タイトル
             $0.options = ["ランダム","ゆっくり","ふつう","はやい"]//選択肢一覧
-            type = UserDefaults.standard.string(forKey: "設定")! //typeに履歴を反映
+            type = UserDefaults.standard.string(forKey: "設定") ?? "ふつう" //typeに履歴を反映
             $0.value = type//初期状態で選択されている選択肢
             
             $0.selectorTitle = "項目を選択"//セレクタのタイトル
