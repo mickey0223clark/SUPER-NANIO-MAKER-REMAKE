@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,7 +15,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Slc-qV-YLT" customClass="settingViewController" customModule="SUPER_NANIO_MAKER_REMAKE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQy-5O-INm">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="IkY-8M-VOp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,7 +61,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="plus.circle" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="tablecells" catalog="system" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -82,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tty-hY-Br9" userLabel="Refreshbutton">
-                                <rect key="frame" x="714" y="292" width="100" height="100"/>
+                                <rect key="frame" x="737" y="317" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system"/>
@@ -100,10 +101,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRp-qF-0KE">
-                                <rect key="frame" x="592" y="292" width="100" height="100"/>
+                                <rect key="frame" x="654" y="317" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="shuffle" catalog="system" title="ランダム"/>
+                                <buttonConfiguration key="configuration" style="plain" image="shuffle" catalog="system" title="ランダム">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="random" destination="BYZ-38-t0r" eventType="touchUpInside" id="22k-Ag-2Ej"/>
                                 </connections>
@@ -229,6 +232,18 @@
                                     <segue destination="vNy-IZ-Ewc" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="FBL-ku-iah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-2t-4L7">
+                                <rect key="frame" x="571" y="317" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.square.dashed" catalog="system"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="セット名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-l1-s38" userLabel="1">
+                                <rect key="frame" x="52" y="337" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -240,7 +255,7 @@
                         <outlet property="detail4" destination="1pc-WA-c7d" id="riH-7I-fPN"/>
                         <outlet property="detail5" destination="Uhj-cs-Lfw" id="a9b-cf-msF"/>
                         <outlet property="detail6" destination="vGe-fR-9Fo" id="Sqp-it-fFc"/>
-                        <outlet property="plusbutton" destination="2Nh-0k-H6r" id="bnY-tA-mgp"/>
+                        <outlet property="presetbutton" destination="2Nh-0k-H6r" id="Ept-Ew-2Zq"/>
                         <outlet property="rule1" destination="VOq-ee-rmc" id="7Pu-gU-gzy"/>
                         <outlet property="rule2" destination="Gk6-qV-rQk" id="9b0-Lo-Snp"/>
                         <outlet property="rule3" destination="yAy-pF-oSa" id="2j2-Rk-4d7"/>
@@ -253,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-14"/>
+            <point key="canvasLocation" x="689.92805755395693" y="-14.07035175879397"/>
         </scene>
         <!--Roulette View Controller-->
         <scene sceneID="6W9-sH-bbU">
@@ -308,9 +323,12 @@
                                 <rect key="frame" x="637" y="1022" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="camera.on.rectangle" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
                                     <backgroundConfiguration key="background" cornerRadius="0.0" strokeWidth="0.0" strokeOutset="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="share" destination="vNy-IZ-Ewc" eventType="touchUpInside" id="F5Z-qs-KdW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-iH-dkE">
                                 <rect key="frame" x="167" y="914" width="500" height="100"/>
@@ -328,6 +346,7 @@
                         <outlet property="detaillabel" destination="trQ-iH-dkE" id="PEE-8N-SD5"/>
                         <outlet property="rouletteView" destination="Zek-QM-MAi" id="edg-1O-Bgb"/>
                         <outlet property="rulelabel" destination="Apr-WV-AIY" id="bqR-XU-bhA"/>
+                        <outlet property="sharebutton" destination="EfQ-xD-K1m" id="13I-ex-EEL"/>
                         <outlet property="startbutton" destination="cij-Aj-7yP" id="7j6-qq-Tbv"/>
                     </connections>
                 </viewController>
@@ -360,30 +379,47 @@
                     <view key="view" contentMode="scaleToFill" id="ve1-R8-eeC">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IdR-HE-LWw">
+                                <rect key="frame" x="0.0" y="0.0" width="731" height="995"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="iUO-S4-DNz">
+                                        <rect key="frame" x="0.0" y="50" width="731" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iUO-S4-DNz" id="f7l-OI-ZD1">
+                                            <rect key="frame" x="0.0" y="0.0" width="731" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="I9v-8P-Qwa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzN-zn-9TD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="682"/>
+            <point key="canvasLocation" x="1048.9208633093526" y="681.9095477386935"/>
         </scene>
     </scenes>
     <resources>
         <image name="1231pxwakusenn.PNG" width="794" height="570"/>
         <image name="666.PNG" width="1280" height="1280"/>
         <image name="blue.PNG" width="1280" height="1280"/>
-        <image name="camera.on.rectangle" catalog="system" width="128" height="98"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="chevron.backward.circle" catalog="system" width="128" height="123"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="green.PNG" width="1280" height="1280"/>
         <image name="light blue.PNG" width="1280" height="1280"/>
         <image name="pink.PNG" width="1280" height="1280"/>
-        <image name="plus.circle" catalog="system" width="128" height="123"/>
+        <image name="plus.square.dashed" catalog="system" width="128" height="114"/>
         <image name="red.png" width="1280" height="1280"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="tablecells" catalog="system" width="128" height="93"/>
         <image name="trash" catalog="system" width="117" height="128"/>
         <image name="yellow.png" width="1280" height="1280"/>
         <systemColor name="linkColor">

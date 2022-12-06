@@ -34,6 +34,7 @@ class rouletteViewController: UIViewController {
     @IBOutlet var rouletteView: UIImageView!
     @IBOutlet var backbutton:UIButton!
     @IBOutlet var startbutton: UIButton!
+    @IBOutlet var sharebutton: UIButton!
     @IBOutlet var detaillabel:UILabel!
     
     
@@ -147,6 +148,11 @@ class rouletteViewController: UIViewController {
         let largeConfig = UIImage.SymbolConfiguration(pointSize: 30, weight: .bold, scale: .large)
         let largeBoldPu = UIImage(systemName: "chevron.backward", withConfiguration: largeConfig)
         backbutton.setImage(largeBoldPu, for: .normal)
+        
+        let largeConfig3 = UIImage.SymbolConfiguration(pointSize: 50, weight: .bold, scale: .large)
+        let largeBoldPul2 = UIImage(systemName: "square.and.arrow.up", withConfiguration: largeConfig3)
+        sharebutton.setImage(largeBoldPul2, for: .normal)
+        
         // Do any additional setup after loading the view.
         startbutton.titleLabel?.textAlignment = NSTextAlignment.center
     }
@@ -154,6 +160,45 @@ class rouletteViewController: UIViewController {
     
     @IBAction func back (){
         self.dismiss(animated: true, completion:nil)
+    }
+    
+    @IBAction func share(){
+       // let sharetext = "ルール1" + rule1.text!
+       // let shareurl = "url"
+        let image = takeScreenShot()
+        let sharetext = "Xcode動作チェック\n" + rulelabel.text!
+        let shareurl = "yu-------a---rueru"
+        
+        let activityItems = [sharetext,shareurl,image]as[Any]
+        //print(activityItems)
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+//        activityVC.popoverPresentationController?.sourceView = activInd
+        if UIDevice.current.userInterfaceIdiom == .pad {
+              let screenSize = UIScreen.main.bounds
+              if let popPC = activityVC.popoverPresentationController {
+                     popPC.sourceView = activityVC.view
+                     popPC.barButtonItem = .none
+//                  popPC.sourceRect = CGRect(x:screenSize.size.width/2, y: screenSize.size.height-200, width: 0, height: 0)
+                  //popPC.sourceRect = activityVC.accessibilityFrame
+                  popPC.sourceRect = CGRect(x:0, y:0, width: 0, height: 0)
+              }
+          }
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        //let rootVC = windowScene?.windows.first?.rootViewController
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    func takeScreenShot() -> UIImage {
+        let width: CGFloat = UIScreen.main.bounds.size.width
+        let height: CGFloat = UIScreen.main.bounds.size.height
+        let size = CGSize(width: width, height: height)
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        let screenShotImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return screenShotImage
     }
 
     /*

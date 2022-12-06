@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var hairetuNumber = 0;
     
     @IBOutlet weak var settingbutton:UIButton!
-    @IBOutlet weak var plusbutton:UIButton!
+    @IBOutlet weak var presetbutton:UIButton!
     @IBOutlet weak var sharebutton:UIButton!
     
     @IBOutlet var rule1: UITextField!
@@ -57,8 +57,8 @@ class ViewController: UIViewController {
         settingbutton.setImage(largeBoldDoc, for: .normal)
  
         let largeConfig2 = UIImage.SymbolConfiguration(pointSize: 50, weight: .bold, scale: .large)
-        let largeBoldPul1 = UIImage(systemName: "plus.circle", withConfiguration: largeConfig2)
-        plusbutton.setImage(largeBoldPul1, for: .normal)
+        let largeBoldPul1 = UIImage(systemName: "tablecells", withConfiguration: largeConfig2)
+        presetbutton.setImage(largeBoldPul1, for: .normal)
 
         let largeConfig3 = UIImage.SymbolConfiguration(pointSize: 50, weight: .bold, scale: .large)
         let largeBoldPul2 = UIImage(systemName: "square.and.arrow.up", withConfiguration: largeConfig3)
@@ -126,10 +126,11 @@ class ViewController: UIViewController {
     @IBAction func share(){
        // let sharetext = "ルール1" + rule1.text!
        // let shareurl = "url"
+        let image = takeScreenShot()
         let sharetext = "Xcode動作チェック\n" + rule1.text!
         let shareurl = "yu-------a---rueru"
         
-        let activityItems = [sharetext,shareurl]as[Any]
+        let activityItems = [sharetext,shareurl,image]as[Any]
         //print(activityItems)
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
 //        activityVC.popoverPresentationController?.sourceView = activInd
@@ -146,6 +147,19 @@ class ViewController: UIViewController {
         let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
         //let rootVC = windowScene?.windows.first?.rootViewController
         self.present(activityVC, animated: true, completion: nil)
+    }
+    
+    func takeScreenShot() -> UIImage {
+        let width: CGFloat = UIScreen.main.bounds.size.width
+        let height: CGFloat = UIScreen.main.bounds.size.height
+        let size = CGSize(width: width, height: height)
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        let screenShotImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return screenShotImage
     }
     
     @IBAction func refresh(){

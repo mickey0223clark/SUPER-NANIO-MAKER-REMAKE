@@ -32,6 +32,7 @@
 		4B9A44FB286198B80006F2F1 /* 6100.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A44FA286198B80006F2F1 /* 6100.PNG */; };
 		4B9A44FD286199E90006F2F1 /* 650.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A44FC286199E90006F2F1 /* 650.PNG */; };
 		4B9A44FF28619A480006F2F1 /* 666.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A44FE28619A480006F2F1 /* 666.PNG */; };
+		4BA106D3293F08B200F0173A /* presetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA106D2293F08B200F0173A /* presetTableViewController.swift */; };
 		4BB1468E28506DCA00904601 /* wakusenn.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1468D28506DCA00904601 /* wakusenn.PNG */; };
 		4BB1469028507B7600904601 /* 46wakusenn.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1468F28507B7600904601 /* 46wakusenn.PNG */; };
 		62AE307C113F6FA374EAFAD8 /* Pods_SUPER_NANIO_MAKER_REMAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C29AB876B5A118436B6DB4A /* Pods_SUPER_NANIO_MAKER_REMAKE.framework */; };
@@ -88,6 +89,7 @@
 		4B9A44FA286198B80006F2F1 /* 6100.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6100.PNG; path = ../../../Downloads/6100.PNG; sourceTree = "<group>"; };
 		4B9A44FC286199E90006F2F1 /* 650.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 650.PNG; path = ../../../Downloads/650.PNG; sourceTree = "<group>"; };
 		4B9A44FE28619A480006F2F1 /* 666.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 666.PNG; path = ../../../Downloads/666.PNG; sourceTree = "<group>"; };
+		4BA106D2293F08B200F0173A /* presetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presetTableViewController.swift; sourceTree = "<group>"; };
 		4BB1468D28506DCA00904601 /* wakusenn.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wakusenn.PNG; path = ../../../Downloads/wakusenn.PNG; sourceTree = "<group>"; };
 		4BB1468F28507B7600904601 /* 46wakusenn.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 46wakusenn.PNG; path = ../../../Downloads/46wakusenn.PNG; sourceTree = "<group>"; };
 		4C29AB876B5A118436B6DB4A /* Pods_SUPER_NANIO_MAKER_REMAKE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPER_NANIO_MAKER_REMAKE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				4B3D1E292907B2B500F704AA /* NanioClass.swift */,
 				3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */,
 				4B27568028D049CD00028568 /* settingViewController.swift */,
+				4BA106D2293F08B200F0173A /* presetTableViewController.swift */,
 				3CD3882F27D86FC900CDFA3B /* Assets.xcassets */,
 				3CD3885627D870FD00CDFA3B /* roulette.png */,
 				3CD3883127D86FC900CDFA3B /* LaunchScreen.storyboard */,
@@ -477,6 +480,7 @@
 				4B27568128D049CD00028568 /* settingViewController.swift in Sources */,
 				3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */,
 				3CD3882927D86FC500CDFA3B /* SceneDelegate.swift in Sources */,
+				4BA106D3293F08B200F0173A /* presetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
