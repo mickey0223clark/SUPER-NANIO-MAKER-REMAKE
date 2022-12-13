@@ -21,6 +21,7 @@
 		3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */; };
 		4B27568128D049CD00028568 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27568028D049CD00028568 /* settingViewController.swift */; };
 		4B3D1E2A2907B2B600F704AA /* NanioClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D1E292907B2B500F704AA /* NanioClass.swift */; };
+		4B6EED7529483FDE00F6C816 /* PresetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EED7429483FDE00F6C816 /* PresetClass.swift */; };
 		4B9A3FA528756665000EFDC9 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3F9F28756664000EFDC9 /* yellow.png */; };
 		4B9A3FA628756665000EFDC9 /* light blue.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3FA028756665000EFDC9 /* light blue.PNG */; };
 		4B9A3FA728756665000EFDC9 /* pink.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A3FA128756665000EFDC9 /* pink.PNG */; };
@@ -78,6 +79,7 @@
 		3F63375C166DD2DCFAF66809 /* Pods_SUPER_NANIO_MAKER_REMAKETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUPER_NANIO_MAKER_REMAKETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B27568028D049CD00028568 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		4B3D1E292907B2B500F704AA /* NanioClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanioClass.swift; sourceTree = "<group>"; };
+		4B6EED7429483FDE00F6C816 /* PresetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetClass.swift; sourceTree = "<group>"; };
 		4B9A3F9F28756664000EFDC9 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = ../../../Downloads/yellow.png; sourceTree = "<group>"; };
 		4B9A3FA028756665000EFDC9 /* light blue.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light blue.PNG"; path = "../../../Downloads/light blue.PNG"; sourceTree = "<group>"; };
 		4B9A3FA128756665000EFDC9 /* pink.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink.PNG; path = ../../../Downloads/pink.PNG; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				3CD3882827D86FC500CDFA3B /* SceneDelegate.swift */,
 				3CD3882C27D86FC500CDFA3B /* Main.storyboard */,
 				3CD3882A27D86FC500CDFA3B /* ViewController.swift */,
+				4B6EED7429483FDE00F6C816 /* PresetClass.swift */,
 				4B3D1E292907B2B500F704AA /* NanioClass.swift */,
 				3CD3885827D9BE1200CDFA3B /* rouletteViewController.swift */,
 				4B27568028D049CD00028568 /* settingViewController.swift */,
@@ -479,6 +482,7 @@
 				3CD3882727D86FC500CDFA3B /* AppDelegate.swift in Sources */,
 				4B27568128D049CD00028568 /* settingViewController.swift in Sources */,
 				3CD3885927D9BE1200CDFA3B /* rouletteViewController.swift in Sources */,
+				4B6EED7529483FDE00F6C816 /* PresetClass.swift in Sources */,
 				3CD3882927D86FC500CDFA3B /* SceneDelegate.swift in Sources */,
 				4BA106D3293F08B200F0173A /* presetTableViewController.swift in Sources */,
 			);

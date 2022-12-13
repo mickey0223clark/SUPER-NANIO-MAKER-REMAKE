@@ -13,9 +13,12 @@ class ViewController: UIViewController {
     var hairetuArray: [Nanio] = []
     var hairetuNumber = 0;
     
+    var presetArray: [presetdate] = []
+    
     @IBOutlet weak var settingbutton:UIButton!
     @IBOutlet weak var presetbutton:UIButton!
     @IBOutlet weak var sharebutton:UIButton!
+    @IBOutlet weak var savepresetbutton:UIButton!
     
     @IBOutlet var rule1: UITextField!
     @IBOutlet var rule2: UITextField!
@@ -109,13 +112,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setting(){
-        rule1.text = "アサルトライフル縛り"
+        rule1.text = presetArray[0].prerule1
         rule2.text = "サブマシンガン縛り"
         rule3.text = "ショットガン縛り"
         rule4.text = "スナイパー縛り"
         rule5.text = "ピッケル縛り"
         rule6.text = "回復縛り"
-        detail1.text = "アサルトライフル以外使用禁止！"
+        detail1.text = presetArray[0].predetail1
         detail2.text = "サブマシンガン以外使用禁止！"
         detail3.text = "ショットガン以外使用禁止！"
         detail4.text = "スナイパー以外使用禁止！"
@@ -175,6 +178,37 @@ class ViewController: UIViewController {
         detail4.text = ""
         detail5.text = ""
         detail6.text = ""
+    }
+    
+    @IBAction func savepreset(){
+                presetArray.append(presetdate(prerule1:rule1.text!, predetail1:detail1.text!))
+                presetArray.append(presetdate(prerule2:rule2.text!, predetail2:detail2.text!))
+                presetArray.append(presetdate(prerule3:rule3.text!, predetail3:detail3.text!))
+                presetArray.append(presetdate(prerule4:rule4.text!, predetail4:detail4.text!))
+                presetArray.append(presetdate(prerule5:rule5.text!, predetail5:detail5.text!))
+                presetArray.append(presetdate(prerule6:rule6.text!, predetail6:detail6.text!))
+
+        
+    //    presetArray.append(presetdate(prerule1:rule1.text!, predetail1:detail1.text!, prerule2:rule2.text!,  predetail2:detail2.text!, prerule3:rule3.text!, predetail3:detail3.text!, prerule4:rule4.text!, predetail4:detail4.text!,  prerule5:rule5.text!, predetail5:detail5.text!, prerule6:rule6.text!, predetail6:detail6.text!))
+        
+//        presetArray.append(presetdate(prerule2:rule2.text!, predetail2:detail2.text!))
+//        presetArray.append(presetdate(prerule3:rule3.text!, predetail3:detail3.text!))
+//        presetArray.append(presetdate(prerule4:rule4.text!, predetail4:detail4.text!))
+//        presetArray.append(presetdate(prerule5:rule5.text!, predetail5:detail5.text!))
+//        presetArray.append(presetdate(prerule6:rule6.text!, predetail6:detail6.text!))
+
+        let alert: UIAlertController = UIAlertController(title: "保存完了", message: "保存しました", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(
+        title: "OK",
+        style: .default,
+        handler: { action in
+            print("savepreset完了")
+            print(self.presetArray)
+        }
+    )
+)
+        present(alert, animated: true, completion: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
