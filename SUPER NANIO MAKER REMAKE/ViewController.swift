@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    var savedate: UserDefaults! = UserDefaults.standard;
     var hairetuArray: [Nanio] = []
     var hairetuNumber = 0;
     
-    var presetArray: [presetdate] = []
+    var presetArray = [presetdate]()
     
     @IBOutlet weak var settingbutton:UIButton!
     @IBOutlet weak var presetbutton:UIButton!
@@ -112,18 +112,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setting(){
-        rule1.text = presetArray[0].prerule1
-        rule2.text = "サブマシンガン縛り"
-        rule3.text = "ショットガン縛り"
-        rule4.text = "スナイパー縛り"
-        rule5.text = "ピッケル縛り"
-        rule6.text = "回復縛り"
-        detail1.text = presetArray[0].predetail1
-        detail2.text = "サブマシンガン以外使用禁止！"
-        detail3.text = "ショットガン以外使用禁止！"
-        detail4.text = "スナイパー以外使用禁止！"
-        detail5.text = "ピッケル以外使用禁止！"
-        detail6.text = "回復以外使用禁止！"
+//        rule1.text = presetArray[0].prerule1
+//        rule2.text = "サブマシンガン縛り"
+//        rule3.text = "ショットガン縛り"
+//        rule4.text = "スナイパー縛り"
+//        rule5.text = "ピッケル縛り"
+//        rule6.text = "回復縛り"
+//        detail1.text = presetArray[0].predetail1
+//        detail2.text = "サブマシンガン以外使用禁止！"
+//        detail3.text = "ショットガン以外使用禁止！"
+//        detail4.text = "スナイパー以外使用禁止！"
+//        detail5.text = "ピッケル以外使用禁止！"
+//        detail6.text = "回復以外使用禁止！"
     }
     
     @IBAction func share(){
@@ -181,13 +181,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func savepreset(){
-                presetArray.append(presetdate(prerule1:rule1.text!, predetail1:detail1.text!))
-                presetArray.append(presetdate(prerule2:rule2.text!, predetail2:detail2.text!))
-                presetArray.append(presetdate(prerule3:rule3.text!, predetail3:detail3.text!))
-                presetArray.append(presetdate(prerule4:rule4.text!, predetail4:detail4.text!))
-                presetArray.append(presetdate(prerule5:rule5.text!, predetail5:detail5.text!))
-                presetArray.append(presetdate(prerule6:rule6.text!, predetail6:detail6.text!))
-
+      //  savedate.object(forKey: "preset")
+        let preset = presetdate(prerule1: rule1.text!, predetail1: detail1.text!, prerule2: rule2.text!, predetail2: detail2.text!, prerule3: rule3.text!, predetail3: detail3.text!, prerule4: rule4.text!, predetail4: detail4.text!, prerule5: rule5.text!, predetail5: detail5.text!, prerule6: rule6.text!, predetail6: detail6.text!)
+        
+        presetArray.append(preset)
+        let jsonEncoder = JSONEncoder()
+                guard let data = try? jsonEncoder.encode(presetArray) else {
+                    return
+                }
+        savedate.set(data, forKey: "preset")
+//                presetArray.append(presetdate(prerule1:rule1.text!, predetail1:detail1.text!))
+//                presetArray.append(presetdate(prerule2:rule2.text!, predetail2:detail2.text!))
+//                presetArray.append(presetdate(prerule3:rule3.text!, predetail3:detail3.text!))
+//                presetArray.append(presetdate(prerule4:rule4.text!, predetail4:detail4.text!))
+//                presetArray.append(presetdate(prerule5:rule5.text!, predetail5:detail5.text!))
+//                presetArray.append(presetdate(prerule6:rule6.text!, predetail6:detail6.text!))
         
     //    presetArray.append(presetdate(prerule1:rule1.text!, predetail1:detail1.text!, prerule2:rule2.text!,  predetail2:detail2.text!, prerule3:rule3.text!, predetail3:detail3.text!, prerule4:rule4.text!, predetail4:detail4.text!,  prerule5:rule5.text!, predetail5:detail5.text!, prerule6:rule6.text!, predetail6:detail6.text!))
         

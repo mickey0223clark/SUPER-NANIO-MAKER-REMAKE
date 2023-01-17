@@ -4,7 +4,7 @@
 target 'SUPER NANIO MAKER REMAKE' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'Eureka'
+  pod 'Eureka'
 
   # Pods for SUPER NANIO MAKER REMAKE
 
