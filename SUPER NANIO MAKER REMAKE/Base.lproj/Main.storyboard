@@ -241,7 +241,7 @@
                                     <action selector="savepreset" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIl-Xw-lbV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="セット名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-l1-s38" userLabel="1">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="セット名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-l1-s38">
                                 <rect key="frame" x="52" y="337" width="316" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -266,6 +266,7 @@
                         <outlet property="rule5" destination="g3N-Mj-Nef" id="gvY-cl-NAA"/>
                         <outlet property="rule6" destination="Sba-Rj-1ii" id="h2v-5H-yPz"/>
                         <outlet property="savepresetbutton" destination="bm5-2t-4L7" id="Jlb-cC-3cK"/>
+                        <outlet property="setname" destination="H1o-l1-s38" id="1RH-vB-bNU"/>
                         <outlet property="settingbutton" destination="eOm-bY-65t" id="NO7-c8-vdc"/>
                         <outlet property="sharebutton" destination="wXe-FP-43m" id="DwB-Oa-osd"/>
                     </connections>

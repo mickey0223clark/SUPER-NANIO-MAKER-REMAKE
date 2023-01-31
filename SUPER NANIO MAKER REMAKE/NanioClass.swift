@@ -8,10 +8,12 @@
 import UIKit
 
 class Nanio {
+    var setname: String!
     var rule: String!    //ルール
     var detail: String!  //詳細
     
-    init(rule: String, detail: String) {
+    init(setname: String, rule: String, detail: String) {
+        self.setname = setname
         self.rule = rule
         self.detail = detail
     }

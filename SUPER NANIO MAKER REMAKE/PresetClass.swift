@@ -8,6 +8,8 @@
 import UIKit
 
 class presetdate: Codable{
+    
+    var setname: String!
     var prerule1: String!    //ルール
     var prerule2: String!
     var prerule3: String!
@@ -22,7 +24,8 @@ class presetdate: Codable{
     var predetail5: String!
     var predetail6: String!
     
-    init(prerule1: String, predetail1: String,prerule2: String, predetail2: String,prerule3: String, predetail3: String,prerule4: String, predetail4: String,prerule5: String, predetail5: String,prerule6: String, predetail6: String) {
+    init(setname: String,prerule1: String, predetail1: String,prerule2: String, predetail2: String,prerule3: String, predetail3: String,prerule4: String, predetail4: String,prerule5: String, predetail5: String,prerule6: String, predetail6: String) {
+        self.setname = setname
         self.prerule1 = prerule1
         self.predetail1 = predetail1
         self.prerule2 = prerule2

@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sharebutton:UIButton!
     @IBOutlet weak var savepresetbutton:UIButton!
     
+    @IBOutlet var setname: UITextField!
+    
     @IBOutlet var rule1: UITextField!
     @IBOutlet var rule2: UITextField!
     @IBOutlet var rule3: UITextField!
@@ -37,20 +39,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hairetuArray.append(Nanio(rule: "アサルトライフル縛り", detail: "アサルトライフル以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "サブマシンガン縛り", detail: "サブマシンガン以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "ショットガン縛り", detail: "ショットガン以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "スナイパー縛り", detail: "スナイパー以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "ピッケル縛り", detail: "ピッケル以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "回復縛り", detail: "回復以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "ライトマシンガン縛り", detail: "ライトマシンガン以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "レジェンド縛り", detail: "レジェンド以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "エピック縛り", detail: "エピック以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "レア縛り", detail: "レア以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "アンコモン縛り", detail: "アンコモン以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "コモン縛り", detail: "コモン以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "ミシック縛り", detail: "ミシック以外使用禁止！！"))
-        hairetuArray.append(Nanio(rule: "エキゾチック縛り", detail: "エキゾチック以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "アサルトライフル縛り", detail: "アサルトライフル以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "サブマシンガン縛り", detail: "サブマシンガン以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "ショットガン縛り", detail: "ショットガン以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "スナイパー縛り", detail: "スナイパー以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "ピッケル縛り", detail: "ピッケル以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "回復縛り", detail: "回復以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "ライトマシンガン縛り", detail: "ライトマシンガン以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "レジェンド縛り", detail: "レジェンド以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "エピック縛り", detail: "エピック以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "レア縛り", detail: "レア以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "アンコモン縛り", detail: "アンコモン以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "コモン縛り", detail: "コモン以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "ミシック縛り", detail: "ミシック以外使用禁止！！"))
+        hairetuArray.append(Nanio(setname: "なにを", rule: "エキゾチック縛り", detail: "エキゾチック以外使用禁止！！"))
         
         hairetuNumber = hairetuArray.count
         print("\(hairetuArray.count)と\(hairetuNumber)")
@@ -166,6 +168,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func refresh(){
+        setname.text = ""
         rule1.text = ""
         rule2.text = ""
         rule3.text = ""
@@ -182,7 +185,7 @@ class ViewController: UIViewController {
     
     @IBAction func savepreset(){
       //  savedate.object(forKey: "preset")
-        let preset = presetdate(prerule1: rule1.text!, predetail1: detail1.text!, prerule2: rule2.text!, predetail2: detail2.text!, prerule3: rule3.text!, predetail3: detail3.text!, prerule4: rule4.text!, predetail4: detail4.text!, prerule5: rule5.text!, predetail5: detail5.text!, prerule6: rule6.text!, predetail6: detail6.text!)
+        let preset = presetdate(setname:setname.text!,prerule1: rule1.text!, predetail1: detail1.text!, prerule2: rule2.text!, predetail2: detail2.text!, prerule3: rule3.text!, predetail3: detail3.text!, prerule4: rule4.text!, predetail4: detail4.text!, prerule5: rule5.text!, predetail5: detail5.text!, prerule6: rule6.text!, predetail6: detail6.text!)
         
         presetArray.append(preset)
         let jsonEncoder = JSONEncoder()
